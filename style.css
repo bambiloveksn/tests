@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+nav{
+    display: flex;
+    background-color: #3c2a21;
+    padding: 20px;
+    align-items: center;
+}
+.side-menu{
+    display: flex;
+}
+nav .menu-list{
+    width: 70%;
+    text-align: center;
+    
+}
+nav .menu-list a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+}
+nav .menu-list a:hover{
+    border-bottom: 2px solid white;
+}
+nav .side-menu .search{
+    background-color: white;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}
+nav .side-menu .search input{
+    border: 0;
+    outline: 0;
+    width: 200px;
+    font-size: 18px;
+    color: burlywood;
+}
+nav .side-menu a{
+    color: white;
+    background: burlywood;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+/* home section */
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 60px;
+    background-image: url(imgs/coffee01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#home h1{
+    font-size: 150px;
+}
+#home h2{
+    font-size: 50px;
+    margin: 15px 0px;
+}
+#home p{
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+#home a{
+    color: white;
+    background-color: burlywood;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#cards .card{
+    width: 300px;
+    text-align: center;
+    background-color: burlywood;
+    box-shadow: 2px 2px 10px grey;
+}
+#cards .card img{
+    width: 100%;
+}
+#cards .main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+@media (max-width: 900px) {
+    #cards .main{
+        display: flex;flex-direction: column;
+        align-items: center;
+    } 
+}
+@media (max-width: 900px) {
+    #cards .card{
+        margin: 30px;
+    }
+}
+nav #chk:checked ~ a{
+    display: block;
+}
+nav .menu-list label{
+    color: white;
+}
+nav #chk,nav label{
+    display: none;
+}
+@media (max-width:900px) {
+    nav label{
+        display: block;
+    }
+    nav .menu-list a{
+        display: none;
+        width: 40px;
+    }
+    nav{
+        align-items: start;
+    }
+    nav .menu-list{
+        text-align: start;
+    }
+    
+}
+@media (max-width:700px) {
+    #home .text{
+        text-align: center;
+    }
+    #home .text p{
+        font-size: 18px;
+    }
+    #home h1{
+        font-size: 140px;
+    }
+    #home h2{
+        font-size: 40px;
+       
+
+    
+}
